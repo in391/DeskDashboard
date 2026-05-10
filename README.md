@@ -1,6 +1,6 @@
-# HomeDisplay
+# DeskDisplay
 
-A home information display system built on a LilyGo T5 4.7″ e-paper screen (ESP32-S3) and a Raspberry Pi. The Raspberry Pi collects data from several sources and streams it to the display over Bluetooth Low Energy (BLE).
+A Desk display built on a LilyGo T5 4.7″ e-paper screen (ESP32-S3) and a Raspberry Pi. The Raspberry Pi collects data from several sources and streams it to the display over Bluetooth Low Energy (BLE).
 
 ## Features
 
@@ -34,12 +34,12 @@ The Raspberry Pi runs a BLE GATT server that the ESP32 connects to as a client. 
 |-----------|---------|
 | Display | [LilyGo T5 4.7″ e-Paper S3](https://www.lilygo.cc/products/t5-4-7-inch-e-paper-v2-3) (ESP32-S3, 4.7″ EPD) |
 | Server | Raspberry Pi (any model with Bluetooth 4.0+) |
-| Sensor | Any sensor compatible with the [HomeTemp](https://github.com/in391/HomeTemp) project |
+| Sensor | Any sensor compatible with Raspberry Pi |
 
 ## Repository Structure
 
 ```
-HomeDisplay/
+DeskDisplay/
 ├── raspi_ble_server/        # Python BLE GATT server (runs on Raspberry Pi)
 │   ├── ble_server.py        # Main server: BLE setup, file monitor, scheduled tasks
 │   ├── check_weather.py     # Apple WeatherKit integration
@@ -123,13 +123,13 @@ sudo ./install.sh
 
 This will:
 - Configure BlueZ to start with the `--experimental` flag
-- Create and enable the `homedisplay-ble.service` systemd unit
+- Create and enable the `deskdisplay-ble.service` systemd unit
 
 Check the service status:
 
 ```bash
-systemctl status homedisplay-ble.service
-journalctl -u homedisplay-ble.service -f
+systemctl status deskdisplay-ble.service
+journalctl -u deskdisplay-ble.service -f
 ```
 
 ### 4. Sensor data source

@@ -11,7 +11,7 @@ VENV_DIR="/home/ijong/dev/HomeDisplay/.venv"
 SERVICE_HOME="/home/ijong/"
 CLOUD_PROJECT_DEFAULT="elegant-zodiac-386801"
 
-SERVICE_NAME="homedisplay-ble.service"
+SERVICE_NAME="deskdisplay-ble.service"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SERVICE_FILE_PATH="/etc/systemd/system/${SERVICE_NAME}"
 ENV_FILE_PATH="/etc/default/homedisplay-ble"
