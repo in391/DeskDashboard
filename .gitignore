@@ -1,0 +1,31 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+*.sqlite
+*.sqlite-journal
+*.env
+.env.*
+venv/
+*.ics
+
+# Ignore credentials and secrets
+*.key
+*.crt
+*.pem
+*.p8
+*.json
+!raspi_ble_server/weatherkit_config.example.json
+!raspi_ble_server/server_config.example.json
+
+# Ignore hidden files and folders
+**/.*
+
+# Keep important git dotfiles
+!.gitignore
+!.gitattributes
+!.gitmodules

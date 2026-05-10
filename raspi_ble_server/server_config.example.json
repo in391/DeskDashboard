@@ -1,0 +1,6 @@
+{
+  "home_temp_json_path": "/absolute/path/to/sensor_latest.log",
+  "service_uuid": "a25659a2-0de7-4f74-a149-94f47b218ba3",
+  "characteristic_uuid": "a25659a2-0de7-4f74-a149-94f47b218ba4",
+  "request_characteristic_uuid": "a25659a2-0de7-4f74-a149-94f47b218ba5"
+}

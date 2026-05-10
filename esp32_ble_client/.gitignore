@@ -1,0 +1,15 @@
+README
+.pio
+.DS_Store
+.jpg
+.MD
+.json
+firmware/
+
+# Ignore hidden files and folders
+**/.*
+
+# Keep important git dotfiles
+!.gitignore
+!.gitattributes
+!.gitmodules
